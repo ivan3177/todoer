@@ -21,3 +21,16 @@ sample({
   source: {title: $title, description: $description},
   target: todoModel.createTodoFx,
 });
+
+export const $createTodoBottomSheetVisible = createStore(false);
+export const toggleCreateTodoBottomSheet = createEvent();
+
+sample({
+  clock: toggleCreateTodoBottomSheet,
+  source: $createTodoBottomSheetVisible,
+  fn: visible => !visible,
+  target: $createTodoBottomSheetVisible,
+});
+
+export const onBottomSheetDismiss = createEvent();
+$createTodoBottomSheetVisible.on(onBottomSheetDismiss, () => false);
