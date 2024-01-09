@@ -10,6 +10,7 @@ const TitleField = reflect({
     marginBottom: 16,
   }),
   bind: {
+    placeholder: 'Title',
     value: createTodoModel.$title,
     onChangeText: createTodoModel.onTitleChange,
   },
@@ -18,6 +19,7 @@ const TitleField = reflect({
 const DescriptionField = reflect({
   view: ui.TextInput,
   bind: {
+    placeholder: 'Description',
     value: createTodoModel.$description,
     onChangeText: createTodoModel.onDescriptionChange,
   },

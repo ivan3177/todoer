@@ -34,3 +34,11 @@ sample({
 
 export const onBottomSheetDismiss = createEvent();
 $createTodoBottomSheetVisible.on(onBottomSheetDismiss, () => false);
+
+sample({
+  clock: todoModel.createTodoFx.done,
+  target: toggleCreateTodoBottomSheet,
+});
+
+$title.on(todoModel.createTodoFx.done, () => '');
+$description.on(todoModel.createTodoFx.done, () => '');

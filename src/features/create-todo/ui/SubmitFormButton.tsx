@@ -1,9 +1,12 @@
 import {reflect} from '@effector/reflect';
 import {ui} from '../../../shared/ui';
 import * as createTodoModel from '../model';
+import {styled} from '@fast-styles/react';
 
 export const SubmitFormButton = reflect({
-  view: ui.Button,
+  view: styled(ui.Button, {
+    marginTop: 20,
+  }),
   bind: {
     label: 'Submit',
     type: 'primary',

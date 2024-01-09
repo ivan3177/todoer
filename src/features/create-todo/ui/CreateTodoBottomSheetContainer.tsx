@@ -7,6 +7,7 @@ import * as createTodoModel from '../model';
 const BottomSheetContainer = styled(View, {
   flex: 1,
   paddingVertical: 16,
+  paddingHorizontal: 16,
 });
 
 export const CreateTodoBottomSheetContainer = ({
@@ -33,7 +34,9 @@ export const CreateTodoBottomSheetContainer = ({
     <BottomSheetModal
       onDismiss={createTodoModel.onBottomSheetDismiss}
       enableDismissOnClose
-      ref={bottomSheetModalRef}>
+      ref={bottomSheetModalRef}
+      enablePanDownToClose
+      snapPoints={[250]}>
       <BottomSheetContainer>{children}</BottomSheetContainer>
     </BottomSheetModal>
   );
