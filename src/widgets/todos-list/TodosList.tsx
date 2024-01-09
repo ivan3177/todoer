@@ -3,6 +3,7 @@ import {todoModel} from '../../entities/todo';
 import {TodoPreview, TodosListContainer} from '../../features/todos/ui';
 import {styled} from '@fast-styles/react';
 import {CreateTodoButton} from '../../features/create-todo/ui';
+import React from 'react';
 
 const Footer = styled(View, {
   paddingVertical: 8,
