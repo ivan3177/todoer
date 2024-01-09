@@ -12,10 +12,13 @@
   "dependencies": {
     "@effector/reflect": "9.0.0",
     "@fast-styles/react": "0.2.9",
+    "@gorhom/bottom-sheet": "4.6.0",
     "effector": "23.1.0",
     "effector-react": "23.1.0",
     "react": "18.2.0",
-    "react-native": "0.73.2"
+    "react-native": "0.73.2",
+    "react-native-gesture-handler": "2.14.0",
+    "react-native-reanimated": "3.6.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
