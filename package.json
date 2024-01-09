@@ -10,8 +10,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "@effector/reflect": "9.0.0",
     "@fast-styles/react": "0.2.9",
     "effector": "23.1.0",
+    "effector-react": "23.1.0",
     "react": "18.2.0",
     "react-native": "0.73.2"
   },

@@ -1,5 +1,10 @@
 import {createEffect, createStore} from 'effector';
-import {createTodo, fetchTodoById, fetchTodos} from '../api';
+import {
+  createTodo,
+  type CreateTodoDto,
+  fetchTodoById,
+  fetchTodos,
+} from '../api';
 
 export interface Todo {
   id: number;
@@ -32,11 +37,9 @@ $todos.on(fetchTodoFx.doneData, (todos, todo) => {
   return todos;
 });
 
-export const createTodoFx = createEffect(
-  async (title: string, description: string) => {
-    return await createTodo({title, description});
-  },
-);
+export const createTodoFx = createEffect(async (props: CreateTodoDto) => {
+  return await createTodo(props);
+});
 
 $todos.on(createTodoFx.doneData, (todos, todo) => {
   return [...todos, todo];

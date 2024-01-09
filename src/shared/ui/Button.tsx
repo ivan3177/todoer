@@ -1,7 +1,7 @@
 import {styled} from '@fast-styles/react';
-import {Pressable, PressableProps, Text} from 'react-native';
+import {Pressable, type PressableProps, Text} from 'react-native';
 import {appTheme} from './theme.ts';
-import React, {ComponentProps} from 'react';
+import React from 'react';
 
 const StyledPressable = styled(Pressable, {
   borderRadius: 16,
