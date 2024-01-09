@@ -1,6 +1,6 @@
 import React, {type PropsWithChildren} from 'react';
 import {GestureHandlerRootView} from '../shared/adapters/react-native-gesture-handler';
-import {BottomSheetModalProvider} from '@gorhom/bottom-sheet';
+import {BottomSheetModalProvider} from '../shared/adapters/@gorhom-bottom-sheet';
 
 export const WithProviders = ({children}: PropsWithChildren) => {
   return (
